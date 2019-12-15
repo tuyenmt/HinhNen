@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Detai_Img">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            android:onClick="back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#F6FF2D"
+            android:layout_marginRight="40dp"
+            android:id="@+id/tv_vitri"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="55dp" >-->
+
+<!--        -->
+
+
+<!--    </androidx.viewpager.widget.ViewPager>-->
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fab_label"
+        android:layout_margin="16dp"
+        app:menu_showShadow="true"
+        app:menu_fab_label="">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:src="@drawable/ic_download"
+            app:fab_size="mini"
+            app:fab_label="960x960"
+            android:id="@+id/size3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:src="@drawable/ic_download"
+            app:fab_size="mini"
+            app:fab_label="640x640"
+            android:id="@+id/size2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:src="@drawable/ic_download"
+            app:fab_size="mini"
+            app:fab_label="320x320"
+            android:id="@+id/size1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</FrameLayout>
